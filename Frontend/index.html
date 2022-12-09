@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>POS / Login</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="assets/vendor/font.css">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!--  Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body onload="myfun()">
+  <div id="loading"></div>
+  <main>
+        <div class="container">
+
+            <div class="row section register min-vh-100 align-items-center justify-content-center py-4">
+
+                <div class="col-lg py-4 d-lg-block d-none">
+                    <img class="img-fluid" src="assets/img/login_main.png" />
+                </div>
+
+                <div class="col-lg-5 col-md-10 d-flex flex-column">
+                  <div class="d-flex justify-content-center py-4">
+                    <a href="index.html" class="logo d-flex align-items-center w-auto">
+                      <img src="assets/img/logo.png" alt="">
+                      <span class="d-lg-block">Point Of Sales</span>
+                    </a>
+                  </div><!-- End Logo -->
+                <div class="container">
+
+                    <!-- End Logo -->
+                    <div class="card mb-3 bx_shadw">
+                        <div class="card-body">
+                            <div class="pt-4 pb-2">
+                                <h5 class="card-title text-center pb-0 fs-4">
+                                    Login to Your
+                                    Account
+                                </h5>
+                                <p class="text-center small">
+                                    Enter your username & password to
+                                    login
+                                </p>
+                            </div>
+                            <div class="row g-3 needs-validation">
+                            
+
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="user_name" placeholder="name@example.com"> 
+                                        <label class="text-muted"> &nbsp; User name</label>
+                                         <div class="text-danger d-none mt-2" id="errmsg4">User name cannot be empty</div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                   
+                                       <input type="password" class="form-control pwd" id="user_password" placeholder="name@example.com"> 
+                                        <label class="text-muted"> &nbsp; Enter your password</label>
+                                         <div class="text-danger d-none mt-2" id="errmsg5">Password cannot be empty</div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12 text-center">
+                                <div class="text-danger d-none mt-2" id="errmsg6"></div>
+                              </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" onclick="myFunction()"
+                                               name="remember"
+                                               value="true" id="rememberMe">
+                                        <label class="form-check-label" for="showpassword">show password?</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="submit" value="Login" class="btn btn-primary w-100" onclick="login()">
+                                </div>
+                                <div class="col-12">
+                                  <a href="StoreRegister.html"><p class="medium mb-0">Create an account?</p></a>
+                              </div>
+                                 
+                              </div>
+                        </div>
+                            </div>
+                </div>
+
+               
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="popup" id="popup3">
+      <h2 class="mt-5"><b id="write_message3"></b></h2>
+      <button class="btn btn-danger" style="float: right;margin: 3px;padding:10px 23px 10px 23px ;" id="bt3">OK</button>
+    </div>
+ </main>
+  <!--    End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!--  Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/jquery.js"></script>
+
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</body>
+
+</html>
+
+
+ 

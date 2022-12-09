@@ -1,0 +1,4 @@
+SELECT product_name,product_price,product_available_quantity,category_name
+FROM tbl_product AS [p0]
+INNER JOIN tbl_category AS [p] ON [p0].fk_category_id = category_id
+where p.fk_store_id = 48 And p0.fk_store_id = 48
